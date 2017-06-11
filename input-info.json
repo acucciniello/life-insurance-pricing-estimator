@@ -1,0 +1,28 @@
+{
+  "people": [
+    {
+      "firstName": "Kelly",
+      "age": 50,
+      "gender": "female",
+      "conditions": [
+        "allergies"
+      ]
+    },
+    {
+      "firstName": "Josh",
+      "age": 40,
+      "gender": "male",
+      "conditions": [
+        "sleepApnea"
+      ]
+    },
+    {
+      "firstName": "Brad",
+      "age": 20,
+      "gender": "male",
+      "conditions": [
+        "heartDisease"
+      ]
+    }
+  ]
+}

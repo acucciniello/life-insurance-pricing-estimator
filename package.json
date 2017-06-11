@@ -1,0 +1,26 @@
+{
+  "name": "life-insurance-pricing-estimator",
+  "version": "1.0.0",
+  "description": "A pricing engine that prints out the estimated policy price for a given person - for PolicyGenius",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "cd test && mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acucciniello/life-insurance-pricing-estimator.git"
+  },
+  "author": "Antonio Cucciniello",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/acucciniello/life-insurance-pricing-estimator/issues"
+  },
+  "homepage": "https://github.com/acucciniello/life-insurance-pricing-estimator#readme",
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "TICKLE": {
+    "baseRate": 100,
+    "bonuses": {
+      "female": 12
+    },
+    "conditionMultiplers": {
+      "allergies": 0.01,
+      "sleepApnea": 0.06,
+      "heartDisease": 0.17
+    },
+    "ageAddition": {
+      "startAge": 18,
+      "ageIncrement": 5,
+      "priceToAdd": 20
+    }
+  }
+}
