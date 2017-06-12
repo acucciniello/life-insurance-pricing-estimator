@@ -1,3 +1,5 @@
+// Tests for validate-inputs.js
+
 var common = require('../common.js')
 var assert = common.assert
 var input = common.input
@@ -61,7 +63,7 @@ it('Non Valid Input Infor returns error messsage', function (done) {
     emptyPI = success
     return
   })
-  assert.equal('The input-inf0.json file has no people.', emptyPI)
+  assert.equal('The input-info.json file has no people.', emptyPI)
   done()
 })
 it('All inputs are valid', function (done) {

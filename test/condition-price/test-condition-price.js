@@ -1,3 +1,5 @@
+// Tests for calculate-condition-price.js
+
 var common = require('../common.js')
 var assert = common.assert
 var input = common.input
@@ -8,7 +10,7 @@ it('Calculate Person 1 Condition Percentage', function (done) {
   var policyName = 'TICKLE'
   var personIndex = 0
   var conditionPercent
-  calculateConditionPrice (policyName, personIndex, policySettings, input, function (percent) {
+  calculateConditionPrice(policyName, personIndex, policySettings, input, function (percent) {
     conditionPercent = percent
   })
   assert.equal(1.01, conditionPercent)
@@ -18,7 +20,7 @@ it('Calculates Person 2 Condition Percentage', function (done) {
   var policyName = 'TICKLE'
   var personIndex = 1
   var conditionPercent
-  calculateConditionPrice (policyName, personIndex, policySettings, input, function (percent) {
+  calculateConditionPrice(policyName, personIndex, policySettings, input, function (percent) {
     conditionPercent = percent
   })
   assert.equal(1.06, conditionPercent)
@@ -28,7 +30,7 @@ it('Calculates Person 3 Condition Percentage', function (done) {
   var policyName = 'TICKLE'
   var personIndex = 2
   var conditionPercent
-  calculateConditionPrice (policyName, personIndex, policySettings, input, function (percent) {
+  calculateConditionPrice(policyName, personIndex, policySettings, input, function (percent) {
     conditionPercent = percent
   })
   assert.equal(1.17, conditionPercent)

@@ -1,3 +1,5 @@
+// Tests for calculate-price.js
+
 var common = require('../common.js')
 var assert = common.assert
 var input = common.input
@@ -5,7 +7,7 @@ var policySettings = common.policy
 var calculatePrice = require('../../src/calculate-price.js')
 
 it('Calculates Person 1 Price', function (done) {
-  var policyName = "TICKLE"
+  var policyName = 'TICKLE'
   var personIndex = 0
   var price
   calculatePrice(policyName, personIndex, policySettings, input, function (totalPrice) {
