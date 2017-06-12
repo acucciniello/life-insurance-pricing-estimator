@@ -14,7 +14,8 @@ A pricing engine that prints out the estimated policy price for a given person -
 
 ## Getting Started
 
-	
+### From GitHub
+
 1. Install [Node.js and NPM](https://docs.npmjs.com/getting-started/installing-node)
 2. Clone this repository:
 
@@ -29,6 +30,26 @@ A pricing engine that prints out the estimated policy price for a given person -
 	```
 	
 4. Run tests:
+	
+	```
+	$ npm test
+	```
+
+### From Zip File
+
+1. Install [Node.js and NPM](https://docs.npmjs.com/getting-started/installing-node)
+
+2. Rename the file to life-insurance-pricing-estimator.zip 
+
+3. Unzip the zip file
+	
+4. Install Project Dependencies (mocha and chai):
+	
+	```
+	$ npm install
+	```
+	
+5. Run tests:
 	
 	```
 	$ npm test

@@ -19,7 +19,10 @@
     "url": "https://github.com/acucciniello/life-insurance-pricing-estimator/issues"
   },
   "standard": {
-    "globals": [ "describe", "it" ]
+    "globals": [
+      "describe",
+      "it"
+    ]
   },
   "homepage": "https://github.com/acucciniello/life-insurance-pricing-estimator#readme",
   "devDependencies": {
