@@ -15,5 +15,4 @@ function calculateConditionPrice (policyName, personIndex, policySettings, input
     }
   }
   callback(totalConditionPrice)
-  return
 }

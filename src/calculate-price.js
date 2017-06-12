@@ -24,7 +24,6 @@ function calculatePrice (policyName, personIndex, policySettings, input, callbac
         calculateBonusTotal(policyName, personIndex, policySettings, input, function (bonusTotal) {
           var totalPrice = conditionTotal - bonusTotal
           callback(totalPrice)
-          return
         })
       })
     })

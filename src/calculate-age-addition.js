@@ -16,5 +16,4 @@ function calculateAgeAddition (policyName, personIndex, policySettings, inputInf
   var incrementAmount = Math.floor(ageDiff / ageIncrement)
   var ageAddition = incrementAmount * priceToAdd
   callback(ageAddition)
-  return
 }

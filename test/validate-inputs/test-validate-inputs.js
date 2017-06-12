@@ -13,10 +13,9 @@ it('Non Valid Policy Name returns error message', function (done) {
   validateInputs(policyName, personIndex, policySettings, input, function (err, success) {
     if (err) {
       policyNameDNE = err
-      return
+    } else {
+      policyNameDNE = success
     }
-    policyNameDNE = success
-    return
   })
   assert.equal('The specific policy you were looking for does not exist in policy-settings.json.', policyNameDNE)
   done()
@@ -28,10 +27,9 @@ it('Non Valid Person Index returns error message', function (done) {
   validateInputs(policyName, personIndex, policySettings, input, function (err, success) {
     if (err) {
       personIndexDNE = err
-      return
+    } else {
+      personIndexDNE = success
     }
-    personIndexDNE = success
-    return
   })
   assert.equal('The specific index you were looking for does not exist in input-info.json.', personIndexDNE)
   done()
@@ -43,10 +41,9 @@ it('Non Valid Policy Settings returns error message', function (done) {
   validateInputs(policyName, personIndex, {}, input, function (err, success) {
     if (err) {
       emptyPS = err
-      return
+    } else {
+      emptyPS = success
     }
-    emptyPS = success
-    return
   })
   assert.equal('The policy-settings.json file has no policies.', emptyPS)
   done()
@@ -58,10 +55,9 @@ it('Non Valid Input Infor returns error messsage', function (done) {
   validateInputs(policyName, personIndex, policySettings, {}, function (err, success) {
     if (err) {
       emptyPI = err
-      return
+    } else {
+      emptyPI = success
     }
-    emptyPI = success
-    return
   })
   assert.equal('The input-info.json file has no people.', emptyPI)
   done()
@@ -73,10 +69,9 @@ it('All inputs are valid', function (done) {
   validateInputs(policyName, personIndex, policySettings, input, function (err, success) {
     if (err) {
       valid = err
-      return
+    } else {
+      valid = success
     }
-    valid = success
-    return
   })
   assert.equal('Files were validated.', valid)
   done()

@@ -13,5 +13,4 @@ function calculateBonusTotal (policyName, personIndex, policySettings, input, ca
     bonusTotal = bonusTotal + policySettings[policyName].bonuses[female]
   }
   callback(bonusTotal)
-  return
 }
