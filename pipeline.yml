@@ -1,2 +1,4 @@
 steps:
-  - command: "npm test"
+  - command:
+    - "npm install"
+    - "npm test"
